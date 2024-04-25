@@ -1,6 +1,6 @@
 @PSM.Barcode.Server_HostAddress = http://localhost:5144
 
-GET {{PSM.Barcode.Server_HostAddress}}/weatherforecast/
+GET {{PSM.Barcode.Server_HostAddress}}/api/weatherforecast/
 Accept: application/json
 
 ###

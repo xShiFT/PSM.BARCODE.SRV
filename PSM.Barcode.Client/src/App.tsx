@@ -74,7 +74,7 @@ function App() {
     );
 
     async function populateUsersData() {
-        const response = await fetch('Users');
+        const response = await fetch('api/Users');
         const data = await response.json();
         setUsers(data);
     }

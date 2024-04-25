@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PSM.Barcode.Server.Models;
 
 namespace PSM.Barcode.Server.DB;
 
@@ -13,4 +14,6 @@ public class ApplicationContext: DbContext
 
 	public DbSet<Operation> Operations { get; set; }
 	public DbSet<User> Users { get; set; }
+
+	public DbSet<BasketItem> BasketItems { get; set; }
 }
