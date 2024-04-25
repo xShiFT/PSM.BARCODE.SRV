@@ -46,6 +46,14 @@ export default defineConfig({
             '^/weatherforecast': {
                 target,
                 secure: false
+            },
+            '^/Users': {
+                target,
+                secure: false
+            },
+            '^/Operations': {
+                target,
+                secure: false
             }
         },
         host: "0.0.0.0",
