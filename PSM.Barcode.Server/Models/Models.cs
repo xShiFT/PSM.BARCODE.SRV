@@ -39,7 +39,7 @@ public class User
     public required string FirstName { get; set; }
 }
 
-[Table("Basket")]
+[Table("Basket_dev")]
 public class BasketItem
 {
     public int IdU { get; set; }

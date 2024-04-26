@@ -6,12 +6,12 @@ namespace PSM.Barcode.Server.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class LastBarcodesController : ControllerBase
+public class BarcodesController : ControllerBase
 {
-	private readonly ILogger<LastBarcodesController> _logger;
+	private readonly ILogger<BarcodesController> _logger;
 	private readonly ApplicationContext _db;
 
-	public LastBarcodesController(ILogger<LastBarcodesController> logger, ApplicationContext db)
+	public BarcodesController(ILogger<BarcodesController> logger, ApplicationContext db)
 	{
 		_logger = logger;
 		_db = db;

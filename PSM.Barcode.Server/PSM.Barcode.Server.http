@@ -4,3 +4,24 @@ GET {{PSM.Barcode.Server_HostAddress}}/api/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{PSM.Barcode.Server_HostAddress}}/api/Barcodes/
+Accept: application/json
+
+###
+
+GET {{PSM.Barcode.Server_HostAddress}}/api/LastBarcode/
+Accept: application/json
+
+###
+
+GET {{PSM.Barcode.Server_HostAddress}}/api/Operations/
+Accept: application/json
+
+###
+
+GET {{PSM.Barcode.Server_HostAddress}}/api/Users/
+Accept: application/json
+
+###
+
