@@ -31,12 +31,21 @@ public class Operation
 
 public class User
 {
-    [Key]
-    public int UserId { get; set; }
-    [MaxLength(20)]
-    public required string Login { get; set; }
-    [MaxLength(15)]
-    public required string FirstName { get; set; }
+	[Key]
+	public int UserId { get; set; }
+	[MaxLength(20)]
+	public required string Login { get; set; }
+	[MaxLength(14)]
+	public required string Password { get; set; }
+	[MaxLength(15)]
+	public required string FirstName { get; set; }
+}
+public class UserDto
+{
+	[MaxLength(20)]
+	public required string Login { get; set; }
+	[MaxLength(14)]
+	public required string Password { get; set; }
 }
 
 [Table("Basket_dev")]

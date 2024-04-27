@@ -49,11 +49,16 @@ public class BasketController : ControllerBase
 	public void Put(int id, [FromBody] string value)
 	{
 	}
-
-	// DELETE api/<BasketController>/5
-	[HttpDelete("{id}")]
-	public void Delete(int id)
-	{
-	}
 	//*/
+
+	// DELETE api/<BasketController>/{userId}
+	[HttpDelete("{userId}")]
+	public void Delete(int userId)
+	{
+		var list = _db.BasketItems.Where(b => b.IdU == userId);
+		foreach (var item in list) {
+			_db.BasketItems.Remove(item);
+			_db.SaveChanges();
+		}
+	}
 }
